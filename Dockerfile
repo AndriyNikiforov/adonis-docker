@@ -7,5 +7,5 @@ RUN apt-get update && apt-get install -yq --fix-missing software-properties-comm
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash
 RUN apt-get install nodejs -y
 
-RUN npm i -h @addonisjs/cli pm2 gulp
+RUN npm i -g @addonisjs/cli pm2 gulp
 
