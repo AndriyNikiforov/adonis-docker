@@ -1,5 +1,6 @@
 FROM ubuntu:bionic
 
+RUN apt-get install bash
 RUN apt-get update && apt-get install -yq --fix-missing zip unzip
 RUN apt-get update && apt-get install -yq --fix-missing software-properties-common curl
 
