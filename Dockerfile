@@ -1,10 +1,9 @@
 FROM ubuntu:bionic
 
-RUN apt-get update && apt-get install -yq --fix-missing apt-utils
 RUN apt-get update && apt-get install -yq --fix-missing zip unzip
 RUN apt-get update && apt-get install -yq --fix-missing software-properties-common curl
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash
 RUN apt-get install nodejs -y
 
 RUN npm i -h @addonisjs/cli pm2 gulp
