@@ -1,9 +1,7 @@
 FROM ubuntu:bionic
 
-RUN apt-get install bash
-RUN apt-get update && apt-get install -yq --fix-missing zip unzip
-RUN apt-get install -yq --fix-missing coreutils
-RUN apt-get install -yq --fix-missing software-properties-common curl
+RUN apt-get update && apt-get install -yq --fix-missing zip unzip bash
+RUN apt-get install -yq --fix-missing coreutils software-properties-common curl
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash
 RUN apt-get install nodejs -y
